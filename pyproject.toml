@@ -1,0 +1,17 @@
+[project]
+name = "cvauto"
+version = "0.1.0"
+description = "General-purpose OpenCV game automation framework"
+requires-python = ">=3.10"
+dependencies = [
+    "opencv-python>=4.8.0",
+    "mss>=9.0.0",
+    "pyautogui>=0.9.54",
+    "numpy>=1.24.0",
+    "keyboard>=0.13.5",
+    "pywin32>=306",
+    "PyQt6>=6.5.0",
+]
+
+[project.scripts]
+cvauto = "cvauto.__main__:main"

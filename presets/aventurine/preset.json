@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "window_title": "崩坏：星穹铁道",
+  "fps_limit": 10,
+  "calibrated_at": {
+    "width": 3840,
+    "height": 2160
+  },
+  "templates": [
+    {
+      "name": "deck_1star",
+      "image_path": "deck_1star.png",
+      "threshold": 0.85
+    },
+    {
+      "name": "deck_2star",
+      "image_path": "deck_2star.png",
+      "threshold": 0.85
+    },
+    {
+      "name": "deck_3star",
+      "image_path": "deck_3star.png",
+      "threshold": 0.85
+    },
+    {
+      "name": "store",
+      "image_path": "store.png",
+      "threshold": 0.85
+    }
+  ],
+  "rois": [
+    {
+      "label": "shop",
+      "rect": {
+        "x": 677,
+        "y": 39,
+        "w": 2752,
+        "h": 681
+      },
+      "template_names": [
+        "store"
+      ]
+    },
+    {
+      "label": "deck",
+      "rect": {
+        "x": 2251,
+        "y": 1678,
+        "w": 750,
+        "h": 288
+      },
+      "template_names": [
+        "deck_2star",
+        "deck_3star",
+        "deck_1star"
+      ]
+    }
+  ],
+  "landmarks": {
+    "flush_button": {
+      "x": 3200,
+      "y": 1000
+    }
+  },
+  "script": "script.py",
+  "entrypoint": "run"
+}
